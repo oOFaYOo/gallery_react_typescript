@@ -1,0 +1,26 @@
+.pic_ico {
+    border-radius: 5px;
+    width: 250px;
+    height: 200px;
+    margin: 15px;
+    opacity: 0.75;
+    overflow: hidden;
+    background-color: rgba(47, 47, 47, 0.64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pic_ico img{
+    max-height: 200%;
+    max-width: 200%;
+    display: block;
+    margin: auto;
+    opacity: 0.75;
+}
+
+.pic_ico:hover {
+    opacity: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,98 @@
+.pic_big {
+    width: 70%;
+    height: 90%;
+    background-color: rgba(62, 62, 62, 0.9);
+    position: absolute;
+    min-width: 500px;
+    min-height: 500px;
+    z-index: 1;
+    border-left: #ff7f50 solid 10px;
+}
+
+
+.origin_pic{
+    position: relative;
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.pic_big img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    display: block;
+    margin: auto;
+}
+
+.close {
+    height: 10%;
+    font-size: 40px;
+    font-family: sans-serif;
+    position: absolute;
+    float: right;
+    color: rgba(236, 236, 236, 0.4);
+    margin: 10px;
+    margin-right: 20px;
+    padding: 0;
+    z-index: 3;
+}
+
+.close:hover, .arrow:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    color: coral;
+}
+
+/*.del img:hover{*/
+/*    cursor: pointer;*/
+/*    transform: scale(1.1, 1.1);*/
+/*}*/
+
+.arrow {
+    color: rgba(236, 236, 236, 0.4);
+    font-size: 60px;
+    position: relative;
+    top: 50%;
+    font-weight: bold;
+    border-radius: 50%;
+    display: block;
+}
+
+#left {
+    float: left;
+    margin-left: 10px;
+}
+
+#right {
+    float: right;
+    margin-right: 10px;
+}
+
+.delete{
+    position: relative;
+    float: bottom;
+    height: 10%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete img{
+    height: 85%;
+    opacity: 0.5;
+
+}
+
+.delete img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}

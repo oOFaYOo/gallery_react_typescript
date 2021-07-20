@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  -webkit-user-select: none;
+}
+
+#root{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  -webkit-user-select: none;
+}
