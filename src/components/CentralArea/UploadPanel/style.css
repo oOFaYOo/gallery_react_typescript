@@ -32,7 +32,7 @@
     /*position: absolute;*/
     display: block;
     margin: auto;
-    opacity: 90%;
+    opacity: 0.9;
 }
 
 #container {
@@ -64,6 +64,6 @@ label{
 
 .add_file img:hover {
     cursor: pointer;
-    opacity: 100%;
+    opacity: 1;
     transform: scale(1.05, 1.05);
 }
