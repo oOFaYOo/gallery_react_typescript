@@ -58,7 +58,7 @@ class CentralArea extends PureComponent<ICentralAreaProps, ICentralAreaState>{
         const images = await this.props.api.getImagesAsync();
         this.setState({
             images: images
-        })
+        });
     }
 
     private openPictureHandler = (name:string, index:number):void => {
@@ -95,8 +95,8 @@ class CentralArea extends PureComponent<ICentralAreaProps, ICentralAreaState>{
         }
     }
 
-    private deleteHandler = ():void => {
-        this.props.api.deleteImage(this.state.openedPicture.name);
+    private deleteHandler = async ():Promise<void> => {
+        await this.props.api.deleteImage(this.state.openedPicture.name);
         this.closeOpenedPicture();
     }
 

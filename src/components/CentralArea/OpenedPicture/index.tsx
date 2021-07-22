@@ -8,7 +8,7 @@ interface IOpenedPictureProps {
     closePicture: () => void;
     scrolLeft: () => void;
     scrolRight: () => void;
-    delete: () => void;
+    delete: () => Promise<void>;
     getImages: () => Promise<void>;
 }
 
@@ -24,7 +24,10 @@ class OpenedPicture extends  PureComponent<IOpenedPictureProps>{
                     <img id="origin_pic" src={this.props.name} />
                 </div>
                 <div className="delete">
-                    <img onClick={()=>{this.props.delete(); this.props.getImages();}} id="del" src="delete.png" />
+                    <img onClick={async ()=>{
+                        await this.props.delete();
+                        await this.props.getImages();
+                    }} id="del" src="delete.png" />
                 </div>
             </div>
         );

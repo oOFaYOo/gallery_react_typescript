@@ -19,10 +19,10 @@ class UploadPanel extends PureComponent<IUploadPanelProps>{
                         <img src="folder_up.png" />
                     </label>
                     <p>ADD PICTURE TO GALLERY</p>
-                    <input onChange={event => {
-                        this.props.api.addImage(event.target.files);
+                    <input onChange={async event => {
+                        await this.props.api.addImage(event.target.files);
                         this.props.closeUpload();
-                        this.props.getImages();
+                        await this.props.getImages();
                     } }
                            id="add_file"
                            type="file"
