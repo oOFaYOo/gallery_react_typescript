@@ -7,7 +7,7 @@ Tested only on Google Chrome.
 
 Second experience of using React and TypeScript.
 
-![weather_demo](https://github.com/oOFaYOo/gallery_react_typescript/blob/master/demo_gallery.gif)
+![weather_demo](https://github.com/oOFaYOo/gallery_react_typescript/blob/master/public/demo.gif)
 
 
 
